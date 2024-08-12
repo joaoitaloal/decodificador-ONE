@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" spellcheck="false">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <img src="public/Frame 6.png" alt="ícone alura" id="icon">
+    <main>
+        <div class="input">
+            <textarea id="text" placeholder="Digite seu texto"></textarea>
+            
+        </div>
+        <div class="buttons">
+            
+            <p id="warning_msg">
+                <img src="public/Vector.png" id="warning_icon">
+                Apenas letras minúsculas e sem acento.
+            </p>
+            <input type="button" value="Criptografar" id="criptografar" onclick="criptografia(true)">
+            <input type="button" value="Descriptografar" id="descriptografar" onclick="criptografia(false)">
+        </div>
+        <div class="output">
+            <img src="public/High quality products 1.png" id="no-msg-icon">
+            <p id="no-msg">Nenhuma mensagem encontrada</p>
+            <p id="output-message">Digite um texto que você deseja criptografar ou descriptografar.</p>
+
+            <input id="copiar" type="button" value="Copiar" onclick="copiar()">
+        </div>
+        <footer>
+            <p>Criado por Italo, 2024</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
